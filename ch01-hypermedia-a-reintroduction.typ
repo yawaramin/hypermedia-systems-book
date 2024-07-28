@@ -99,7 +99,7 @@ Where did the idea of hypermedia come from?
 #index[Memex]
 While there were many precursors to the modern idea of hypertext and the more
 general hypermedia, many people point to the 1945 article _As We May Think_ written
-by Vannevar Bush in The Atlantic as a starting point for looking at what has
+by Vannevar Bush in _The Atlantic_ as a starting point for looking at what has
 become modern hypermedia.
 
 In this article Bush described a device called a #indexed[Memex], which, using a
@@ -122,10 +122,12 @@ Stanford Research Institute, explicitly attempting to make Vannevar Bush’s Mem
 a reality. In 1968, Englebart gave "The Mother of All Demos" in San Francisco,
 California.
 
-Englebart demonstrated an unbelievable amount of technology:- Remote,
-collaborative text editing with his peers in Menlo Park- Video and audio chat-
-An integrated windowing system, with window resizing, etc- A recognizable
-hypertext, whereby clicking on underlined text navigated to new content.
+Englebart demonstrated an unbelievable amount of technology:
+
+- Remote, collaborative text editing with his peers in Menlo Park
+- Video and audio chat
+- An integrated windowing system, with window resizing, etc
+- A recognizable hypertext, whereby clicking on underlined text navigated to new content.
 
 Despite receiving a standing ovation from a shocked audience after his talk, it
 was decades before the technologies Englebart demonstrated became mainstream.
@@ -230,12 +232,13 @@ and content within the tag. Of particular interest is the
 document fragment. It is this attribute that makes the anchor tag a hypermedia
 control.
 
-In a typical web browser, this anchor tag would be interpreted to mean:- Show
-the text "Hypermedia Systems" in a manner indicating that it is clickable- When
-the user clicks on that text, issue an HTTP `GET` request to the URL `https://hypermedia.systems/`-
-Take the HTML content in the body of the HTTP response to this request and
-replace the entire screen in the browser as a new document, updating the
-navigation bar to this new URL.
+In a typical web browser, this anchor tag would be interpreted to mean:
+
+- Show the text "Hypermedia Systems" in a manner indicating that it is clickable
+- When the user clicks on that text, issue an HTTP `GET` request to the URL `https://hypermedia.systems/`
+- Take the HTML content in the body of the HTTP response to this request and
+  replace the entire screen in the browser as a new document, updating the
+  navigation bar to this new URL.
 
 Anchors provide the main mechanism we use to navigate around the web today, by
 selecting links to navigate from document to document, or from resource to
@@ -295,12 +298,15 @@ case of a `POST`. This allows a form to include an arbitrary amount of
 information collected from a user in a request, unlike the anchor tag.
 
 In a typical browser this form tag and its contents would be interpreted by the
-browser roughly as follows:- Show a text input and a "Sign Up" button to the
-user- When the user submits the form by clicking the "Sign Up" button or by
-hitting the enter key while the input element is focused, issue an HTTP `POST` request
-to the path `/signup` on the "current" server- Take the HTML content in the body
-of the HTTP response body and replace the entire screen in the browser as a new
-document, updating the navigation bar to this new URL.
+browser roughly as follows:
+
+- Show a text input and a "Sign Up" button to the user
+- When the user submits the form by clicking the "Sign Up" button or by hitting
+  the enter key while the input element is focused, issue an HTTP `POST` request
+  to the path `/signup` on the "current" server
+- Take the HTML content in the body of the HTTP response body and replace the
+  entire screen in the browser as a new document, updating the navigation bar to
+  this new URL.
 
 This mechanism allows the user to issue requests to _update the state_ of
 resources on the server. Note that despite this new type of request the
